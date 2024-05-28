@@ -70,8 +70,23 @@
                 <div class="vacancies__icon vacancies__icon-price">₽</div>
                 <h3 class="vacancies__price">от 00 000 руб</h3>
               </div>
+              <div class="vacancies__description">
+                <h4>Задачи:</h4>
+                описание
+                описание
+                описание
+                <h4>Наши ожидания:</h4>
+                описание
+                описание
+                <h4>Мы предлагаем:﻿</h4>
+                <ul>
+                  <li>график 5/2 с гибким началом рабочего дня;</li>
+                  <li> оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;</li>
+                  <li>ежеквартальную премию по итогам работы;</li>
+              </ul>
+                </div>
             </div>
-            <div class="vacancies__icon vacancies__icon-plus">+</div>
+            <button class="plus"></button>
           </div>
           <div class="vacancies__item">
             <div>
@@ -86,7 +101,7 @@
                 <h3 class="vacancies__price">Обсуждается на собеседовании</h3>
               </div>
             </div>
-            <div class="vacancies__icon vacancies__icon-plus">+</div>
+            <button class="plus"></button>
           </div>
           <div class="vacancies__item">
             <div>
@@ -101,7 +116,7 @@
                 <h3 class="vacancies__price">от 00 000 руб</h3>
               </div>
             </div>
-            <div class="vacancies__icon vacancies__icon-plus">+</div>
+            <button class="plus"></button>
           </div>
         </div>
         <div class="btn-primary__container">
@@ -111,21 +126,33 @@
       <div class="advantages">
         <h3 class="title advantages__header">Преимущества Компании</h3>
         <div>
+          <div class="advantages__dropdown">
           <div class="advantages__info">
             <h3>Качество продукта</h3>
-            <div class="vacancies__icon vacancies__icon-plus">+</div>
+            <button id="plus" class="plus"></button>
           </div>
+            <div class="advantages__content" id="advantages__content"></div>
+          </div>
+          <div class="advantages__dropdown">
           <div class="advantages__info">
             <h3>Популярность бренда в сети</h3>
-            <div class="vacancies__icon vacancies__icon-plus">+</div>
+            <button id="plus" class="plus"></button>
           </div>
-          <div class="advantages__info">
+            <div class="advantages__content" id="advantages__content"></div>
+          </div>
+          <div class="advantages__dropdown">
+            <div class="advantages__info">
             <h3>Передовое рабочее место</h3>
-            <div class="vacancies__icon vacancies__icon-plus">+</div>
+            <button id="plus" class="plus"></button>
+            </div>
+            <div class="advantages__content" id="advantages__content"></div>
           </div>
-          <div class="advantages__info">
-            <h3>Свои автоматизированные системы обучения</h3>
-            <div class="vacancies__icon vacancies__icon-plus">+</div>
+          <div class="advantages__dropdown">
+            <div class="advantages__info">
+              <h3>Свои автоматизированные системы обучения</h3>
+              <button id="plus" class="plus"></button>
+            </div>
+            <div id="advantages__content" class="advantages__content"></div>
           </div>
         </div>
       </div>
@@ -322,6 +349,7 @@
       </div>
     </footer>
     <script src="js/slider.js"></script>
-    <script src="js/profession.js"></script>
+    <script src="js/contentSlider.js"></script>
+    <script src="js/toggleContent.js"></script>
   </body>
 </html>

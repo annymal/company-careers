@@ -10,7 +10,6 @@ function showSlide(index) {
 }
  
 prevBtn.addEventListener('click', () => {
-    console.log('clik')
     currentIndex = (currentIndex - 1 + slides.length) % slides.length; 
     showSlide(currentIndex)
 })

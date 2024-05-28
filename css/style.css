@@ -203,9 +203,8 @@ ul {
     font-weight: 700;
     background-color: var(--primary-color);
 }
-.vacancies__icon-plus {
-    background-color: var(--third-color);
-}
+
+
 .vacancies__icon-price {
     color: var(--third-color);
 }
@@ -228,9 +227,20 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+}
+.advantages__content {
+    display: none;
+}
+.advantages__content-visible {
+    display: block;
+}
+.advantages__dropdown {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 3px solid var(--secondary-color);
     padding: 16px 20px;
     color: var(--primary-color);
-    border-bottom: 3px solid var(--secondary-color);
 }
 .advantages__header {
     text-align: center;
@@ -320,6 +330,9 @@ ul {
 .menu__contacts {
     gap: 16px;
 }
+.contacts__list {
+    /* list-style: none; */
+}
 
 .success__item {
     flex-direction: column;
@@ -328,6 +341,57 @@ ul {
     border: 3px solid #36853B;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 0 10px #4FB756B2;
 }
+
+
+.plus {
+    background-color: var(--third-color);
+    color: var(--primary-color);
+    position: relative;
+    width: 26px;
+    height: 26px;
+    border-radius: 16px;
+    font-size: 22px;
+}
+.plus::before,
+  .plus::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 2px;
+    background-color: var(--primary-color);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  .plus::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+
+
+.close {
+    background-color: var(--third-color);
+    position: relative;
+    width: 26px;
+    height: 26px;
+    border-radius: 16px;
+  }
+  
+  .close::before,
+  .close::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 2px;
+    background-color: var(--primary-color);
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .close::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  
 
 @media (max-width: 450px) {
     .main__block {
