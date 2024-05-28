@@ -1,3 +1,8 @@
+.close {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 24px;
+}
 .form__block {
     background-color: #262626;
     padding: 46px 20px;
@@ -65,6 +70,33 @@ input[type="file"]::before {
     font-size: 18px;
     font-weight: 700;
   }
-  .form__label input[type="checkbox"] {
-    background-color: #ADD8E6;
+  .confirmation__block {
+    gap: 50px;
   }
+  .custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  .custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 0.5px solid var(--primary-color);
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    background-color: #D9D9D933;
+  }
+  .custom-checkbox:checked+label::before {
+       background-color: red;
+}

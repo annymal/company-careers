@@ -23,10 +23,12 @@
       <div class="main__block">
         <h2>«Пестовский Лесокомбинат»</h2>
         <h3>Cтань частью нашей команды!</h3>
-        <a href="/form.html"><button class="btn-primary main__btn">ОТПРАВИТЬ АНКЕТУ</button></a>
+        <a href="/form.html"
+          ><button class="btn-primary main__btn">ОТПРАВИТЬ АНКЕТУ</button></a
+        >
       </div>
       <div class="about">
-        <h3 class="header about__header">О компании</h3>
+        <h3 class="title about__header">О компании</h3>
         <div class="square">
           <h2 class="about__count">2</h2>
         </div>
@@ -45,7 +47,7 @@
         <p class="about__text">Домов и бань сдаём ежегодно</p>
       </div>
       <div class="choose">
-        <h3 class="header">Выбери подразделение:</h3>
+        <h3 class="title">Выбери подразделение:</h3>
         <nav class="choose__menu">
           <button class="choose__btn choose__btn-active">
             <a href="#">Строительный отдел</a>
@@ -105,11 +107,11 @@
           </div>
         </div>
         <div class="btn-primary__container">
-        <button class="btn-primary">откликнуться на вакансию</button>
-      </div>
+          <a href="form.html"><button class="btn-primary">откликнуться на вакансию</button></a>
+        </div>
       </div>
       <div class="advantages">
-        <h3 class="header advantages__header">Преимущества Компании</h3>
+        <h3 class="title advantages__header">Преимущества Компании</h3>
         <div>
           <div class="advantages__info">
             <h3>Качество продукта</h3>
@@ -130,7 +132,7 @@
         </div>
       </div>
       <div class="products">
-        <h3 class="header center">продукты компании</h3>
+        <h3 class="title center">продукты компании</h3>
         <nav class="choose__menu">
           <button class="choose__btn btn__products choose__btn-active">
             <a href="#">БАНИ</a>
@@ -143,17 +145,21 @@
           <div class="slide"></div>
           <div class="slide"></div>
           <div class="slide"></div>
-          <button class="prev"><img src="img/svg/left.svg" alt="left"></button>
-          <button class="next"><img src="img/svg/right.svg" alt="right"></button>
+          <button class="prev">
+            <img src="img/svg/left.svg" alt="left" />
+          </button>
+          <button class="next">
+            <img src="img/svg/right.svg" alt="right" />
+          </button>
         </div>
         <div class="pagination">
-        <div class="bullet active"></div>
-        <div class="bullet"></div>
-        <div class="bullet"></div>
-      </div>
+          <div class="bullet active"></div>
+          <div class="bullet"></div>
+          <div class="bullet"></div>
+        </div>
       </div>
       <div class="career">
-        <h3 class="header center">Карьерный рост</h3>
+        <h3 class="title center">Карьерный рост</h3>
         <p class="career__text">
           Наша Компания является ярким примером, где достойные люди смело
           и заслуженно поднимаются по карьерной лестнице. Мы ценим стремление
@@ -161,21 +167,30 @@
         </p>
         <div class="career__info">
           <div class="carrer__images">
-            <button><img src="img/svg/left.svg" alt="left" /></button>
-            <img class="career__photo" src="img/Олег.webp" alt="photo" />
-            <button><img src="img/svg/right.svg" alt="right" /></button>
+            <button id="career_prev">
+              <img src="img/svg/left.svg" alt="left" />
+            </button>
+            <img
+              id="photo"
+              class="career__photo"
+              src="img/Олег.webp"
+              alt="photo"
+            />
+            <button id="career_next">
+              <img src="img/svg/right.svg" alt="right" />
+            </button>
           </div>
-          <h4>Олег Воробьёв</h4>
-          <span>Прораб</span>
-          <p class="career__description">
+          <h4 id="name">Олег Воробьёв</h4>
+          <span id="profession">Прораб</span>
+          <p id="career-begin" class="career__description">
             В Компании с 2018 года. Начал с позиции плотника в строительной
             бригаде.
           </p>
-          <p class="career__description">
+          <p id="career-description" class="career__description">
             В течение года работы Олег стал бригадиром и был приглашён в офис
             Компании на должность штатного Производителя строительных работ.
           </p>
-          <p class="career__description">
+          <p id="career-present" class="career__description">
             На данный момент в Его подчинении находятся 9 строительных бригад.
             Олег вносит весомый вклад в итоговый результат Компании,
             а это реализация 100 объектов в год!
@@ -185,20 +200,27 @@
       <div class="success">
         <div class="success__block">
           <div class="success__text">
-            <h3 class="success__title">Наши успехи — это заслуга замечательных людей, работающих в нашей Команде.</h3>
-            <h3 class="success__title">У Нас всегда есть вакансии для сильных кандидатов</h3>
+            <h3 class="success__title">
+              Наши успехи — это заслуга замечательных людей, работающих в нашей
+              Команде.
+            </h3>
+            <h3 class="success__title">
+              У Нас всегда есть вакансии для сильных кандидатов
+            </h3>
           </div>
           <div class="vacancies__item success__item">
-            <h3 class="success__item-title">Если чувствуешь в Себе потенциал и здоровые амбиции — ждём рядом с Нами!</h3>
-            <button class="btn-primary">Присоединиться к команде</button>
+            <h3 class="success__item-title">
+              Если чувствуешь в Себе потенциал и здоровые амбиции — ждём рядом
+              с Нами!
+            </h3>
+            <a href="form.html"><button class="btn-primary">Присоединиться к команде</button></a>
           </div>
         </div>
-      </div>
       </div>
     </main>
     <footer>
       <div class="contacts">
-        <h2 class="header center">Контакты</h2>
+        <h2 class="title center">Контакты</h2>
         <nav class="choose__menu menu__contacts">
           <button
             class="btn-contacts choose__btn btn__products choose__btn-active"
@@ -271,7 +293,15 @@
       </div>
       <div class="map">
         <div class="footer__map map" id="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2001.1138582246182!2d30.323291955649207!3d59.90730660501007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0x7c02b88c7c0350d3!2z0LMuINCf0LDQvdC60LjQuSDQutC-0YDQv9GD0YEgOCwg0LQuLCDQnNC40L3RgdC6LdCw0YI!5e0!3m2!1sru!2sru!4v1624296462181!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"> </iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2001.1138582246182!2d30.323291955649207!3d59.90730660501007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0x7c02b88c7c0350d3!2z0LMuINCf0LDQvdC60LjQuSDQutC-0YDQv9GD0YEgOCwg0LQuLCDQnNC40L3RgdC6LdCw0YI!5e0!3m2!1sru!2sru!4v1624296462181!5m2!1sru!2sru"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
         </div>
       </div>
       <div class="footer__logo">
@@ -286,11 +316,14 @@
               Политика конфиденциальности
             </a>
           </div>
-          <img src="img/svg/logo.svg" alt="logo">
-          <a class="my__link" href="https://t.me/AnnaMalg">Made by Anna Malugina</a>
+          <img src="img/svg/logo.svg" alt="logo" />
+          <a class="my__link" href="https://t.me/AnnaMalg"
+            >Made by Anna Malugina</a
+          >
         </div>
       </div>
     </footer>
-    <script src="js/index.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/profession.js"></script>
   </body>
 </html>
