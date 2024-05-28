@@ -1,8 +1,43 @@
-.close {
-    color: var(--primary-color);
-    font-weight: 700;
-    font-size: 24px;
-}
+.close-button {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .close-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 2px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .close-icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    transform: rotate(45deg);
+  }
+  
+  .close-icon::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    transform: rotate(-45deg);
+  }
+  
 .form__block {
     background-color: #262626;
     padding: 46px 20px;
@@ -73,30 +108,55 @@ input[type="file"]::before {
   .confirmation__block {
     gap: 50px;
   }
+  
   .custom-checkbox {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-  }
-  .custom-checkbox+label {
-    display: inline-flex;
-    align-items: center;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 16px;
     user-select: none;
   }
-  .custom-checkbox+label::before {
-    content: '';
-    display: inline-block;
+  
+  .custom-checkbox .black-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 12px;
     height: 12px;
-    flex-shrink: 0;
-    flex-grow: 0;
-    border: 0.5px solid var(--primary-color);
+    background-color: #D9D9D933;
+    border: 1px solid var(--primary-color);
     border-radius: 3px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 50% 50%;
+  }
+  
+  .custom-checkbox .black-checkbox:checked ~ .checkmark {
     background-color: #D9D9D933;
   }
-  .custom-checkbox:checked+label::before {
-       background-color: red;
-}
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .custom-checkbox .black-checkbox:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .custom-checkbox .checkmark:after {
+    left: 4px;
+    top: 0;
+    width: 3px;
+    height: 6px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
