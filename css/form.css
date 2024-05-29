@@ -159,6 +159,10 @@
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
   }
+  .btn-primary.disabled {
+    background-color: #983c3c;
+    cursor: not-allowed;
+  }
 }
 @media (min-width: 500px) {
   .form__block {
