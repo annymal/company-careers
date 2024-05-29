@@ -1,27 +1,41 @@
-.success {
-    background-image: linear-gradient(to bottom, #212121, #243025 40%, #2f4130 60%, #212121);
+@media (max-width: 991px) {
+  .success {
+    background-image: linear-gradient(
+      to bottom,
+      #212121,
+      #243025 40%,
+      #2f4130 60%,
+      #212121
+    );
     padding: 46px 20px;
-}
-.success__block {
-    background-image: url('../img/team.webp');
+  }
+  .success__block {
+    background-image: url("../img/team.webp");
     background-size: cover;
-    background-size: 112% 100%;
+    background-size: 112% 108%;
     background-position: 54% 0;
-}
-.success__item-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .success__item-title {
     line-height: 22px;
     font-size: 16px;
-}
-.success__title {
+  }
+  .success__title {
     line-height: 24px;
     text-transform: uppercase;
-}
-.success__text {
+  }
+  .success__text {
     margin-bottom: 140px;
+  }
 }
-/* @media (min-width: 500px) {
+
+@media (min-width: 600px) {
     .success__block {
-        background-size: 112% 100%;
+        background-size: 64% 100%;
         background-position: center;
+        background-repeat: no-repeat ;
     }
-} */
+}

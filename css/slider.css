@@ -1,4 +1,5 @@
-.slider {
+@media (max-width: 991px) {
+  .slider {
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -7,35 +8,42 @@
     align-items: center;
     gap: 20px;
   }
-  
+
   .slide {
     width: 130px;
     height: 150px;
     opacity: 1;
-    background: linear-gradient(to left, #00000000 0%, #D9D9D9 70% );
     transition: opacity 0.5s ease-in-out;
     border-radius: 10px;
+    background: linear-gradient(to top, #00000000 0%, #d9d9d9 70%);
   }
-  
+  .left {
+    background: linear-gradient(to left, #00000000 0%, #d9d9d9 70%);
+  }
+  .right {
+    background: linear-gradient(to right, #00000000 0%, #d9d9d9 70%);
+  }
+
   .slide.active {
     width: 160px;
     height: 180px;
     opacity: 1;
-    background: #D9D9D9;
+    background: #d9d9d9;
     border: 3px solid #4f4f4f;
   }
 
-  .prev, .next {
+  .prev,
+  .next {
     position: absolute;
     top: 50%;
     border: none;
     cursor: pointer;
   }
-  
+
   .prev {
     left: 10px;
   }
-  
+
   .next {
     right: 10px;
   }
@@ -57,6 +65,7 @@
   }
 
   .bullet.active {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     width: 42px;
   }
+}

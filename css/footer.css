@@ -1,18 +1,19 @@
-.contacts {
+@media (max-width: 991px) {
+  .contacts {
     padding: 26px 24px;
     display: flex;
     flex-direction: column;
     gap: 40px;
     background-color: #111311;
     color: var(--primary-color);
-}
-.contacts__social {
-     display: flex;
-     gap: 30px;
-     justify-content: center;
-     align-items: center;
-}
-.contacts__list-img {
+  }
+  .contacts__social {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .contacts__list-img {
     height: 20px;
     width: 20px;
     border: 1px solid var(--third-color);
@@ -21,51 +22,52 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.contacts__link {
+  }
+  .contacts__link {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 12px; 
+    font-size: 12px;
     font-weight: 700;
     line-height: 30px;
-}
-.contacts__address {
+  }
+  .contacts__address {
     text-decoration: underline;
-}
+  }
 
-.contacts__list {
+  .contacts__list {
     display: flex;
     flex-direction: column;
     gap: 18px;
-}
-.footer__logo {
+  }
+  .footer__logo {
     padding: 42px;
     background-color: #111311;
     color: var(--primary-color);
-}
-.footer__text {
+  }
+  .footer__text {
     font-size: 14px;
     line-height: 20px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 30px;
-}
-.footer__links {
+  }
+  .footer__links {
     gap: 16px;
     font-size: 12px;
     font-weight: 700;
     line-height: 20px;
     text-decoration: underline;
     text-align: center;
-}
-.footer__politics {
+  }
+  .footer__politics {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 16px;
-}
-.my__link {
+  }
+  .my__link {
     font-size: 10px;
+  }
 }

@@ -6,7 +6,7 @@ const careerBeginElement = document.getElementById("career-begin");
 const careerDecsriptionElement = document.getElementById("career-description");
 const carrerPresentElement = document.getElementById("career-present");
 const professtionElement = document.getElementById("profession");
-const images = ["/img/Олег.webp", "/img/Мария.webp", "/img/Данил.webp"];
+const images = ["img/Олег.webp", "img/Мария.webp", "img/Данил.webp"];
 
 const names = [
     'Олег Воробьёв',
